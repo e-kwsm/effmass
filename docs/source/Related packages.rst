@@ -5,13 +5,13 @@ The `effmass` package is aimed towards theoretical solid state physicists and ch
 Depending on the functionality and level of approximation you are looking for, 
 it may be that one of the packages listed below will suit your needs better.
 
-`vasppy <https://github.com/bjmorgan/vasppy>`_: This is installed as a dependancy of `effmass`. Calculates the effective mass using a least-squares quadratic fit for parabolic dispersions. 
+`vasppy <https://github.com/bjmorgan/vasppy>`_: This is installed as a dependency of `effmass`. Calculates the effective mass using a least-squares quadratic fit for parabolic dispersions. 
 
 `sumo <https://github.com/SMTG-UCL/sumo>`_: Calculates the effective mass using a least-squares fit for parabolic and non-parabolic dispersions. 
 
 `emc <https://github.com/afonari/emc>`_: Calculates the effective mass *tensor* using a finite-difference method for parabolic dispersions.
 
-`pymatgen <http://pymatgen.org>`_: This is installed as a dependancy of `effmass`. Calculates an average effective mass *tensor* for non-parabolic dispersions with multiple bands and extrema. Also calculates the Seebeck effective mass as defined `here <https://perso.uclouvain.be/geoffroy.hautier/wp-content/papercite-data/pdf/gibbs2017.pdf>`_.
+`pymatgen <http://pymatgen.org>`_: This is installed as a dependency of `effmass`. Calculates an average effective mass *tensor* for non-parabolic dispersions with multiple bands and extrema. Also calculates the Seebeck effective mass as defined `here <https://perso.uclouvain.be/geoffroy.hautier/wp-content/papercite-data/pdf/gibbs2017.pdf>`_.
 
 `mstar <https://github.com/rubel75/mstar>`_: Effective mass calculator using k.p perturbation theory. Assumes parabolicity; provides the conductivity effective mass tensor at band edge. The advantage of this code is that it does not require a DFT calculation along the high symmetry paths in reciprocal space. 
 

@@ -269,7 +269,7 @@ class Segment:
             temp (float, optional): The temperature (K) to be used in Fermi-Dirac statistics. Defaults to 300.
             alpha (float, optional): The alpha parameter of the Kane dispersion (hartree$^{-1}$)
             mass_bandedge: The mass at bandedge parameter of the Kane dispersion (units electron mass).
-            upper_limit (float, optional): The integration upper limit (bohr$^{-1}$). Defaults to where the Kane quasi-linear dispersion is no longer valide, defined by :meth:`~effmass.analysis.Segment.explosion_index`.
+            upper_limit (float, optional): The integration upper limit (bohr$^{-1}$). Defaults to where the Kane quasi-linear dispersion is no longer valid, defined by :meth:`~effmass.analysis.Segment.explosion_index`.
 
         Returns:
             float: The optical effective mass (units of electron mass), defined as the inverse of the second derivative of a kane dispersion, weighted according to occupancy of available eigenstates (the product of density of states and the fermi-dirac distribution).
@@ -366,7 +366,7 @@ class Segment:
         Args:
             fermi_level (float, optional ): Fermi level (eV) to be used in Fermi-dirac statistics. Defaults to :attr:`~effmass.analysis.Segment.fermi_energy`.
             temp (float, optional): The temperature (K) to be used in Fermi-Dirac statistics. Defaults to 300.
-            upper_limit (float, optional): The integration upper limit (bohr$^{-1}$). Defaults to where the Kane quasi-linear dispersion is no longer valide, defined by :meth:`~effmass.analysis.Segment.explosion_index`.
+            upper_limit (float, optional): The integration upper limit (bohr$^{-1}$). Defaults to where the Kane quasi-linear dispersion is no longer valid, defined by :meth:`~effmass.analysis.Segment.explosion_index`.
 
         Returns:
             float: A normalisation factor for :meth:`~effmass.analysis.Segment.mass_integration`.
@@ -419,7 +419,7 @@ class Segment:
             temp (float, optional): The temperature (K) to be used in Fermi-Dirac statistics. Defaults to 300.
             alpha (float, optional): The alpha parameter of the Kane dispersion (hartree$^{-1}$)
             mass_bandedge: The mass at bandedge parameter of the Kane dispersion (units electron mass).
-            upper_limit (float, optional): The integration upper limit (bohr$^{-1}$). Defaults to where the Kane quasi-linear dispersion is no longer valide, defined by :meth:`~effmass.analysis.Segment.explosion_index`.
+            upper_limit (float, optional): The integration upper limit (bohr$^{-1}$). Defaults to where the Kane quasi-linear dispersion is no longer valid, defined by :meth:`~effmass.analysis.Segment.explosion_index`.
 
         Returns:
             float: The optical effective mass (units of electron mass) of the :class:`~effmass.analysis.Segment`.
@@ -548,7 +548,7 @@ class Segment:
             ..math::
                 \frac{1}{m_o} = \frac{\sum_i f(E_i) g(k_i) \frac{\delta^2 E}{\delta k^2}|_i}{\sum f(E_i) g(k_i)}
 
-        where the sum is over eigenstates i contained withing the :class:`~effmass.analysis.Segment`. :math:`f_(E_i)` is the probability of occupation (Fermi-Dirac statistics) and :math:`g(k_i)` is the density of states at that k-point.
+        where the sum is over eigenstates i contained within the :class:`~effmass.analysis.Segment`. :math:`f_(E_i)` is the probability of occupation (Fermi-Dirac statistics) and :math:`g(k_i)` is the density of states at that k-point.
 
         Args:
             polyfit_order (int, optional): order of polynomial used to approximate the dispersion. Defaults to 6.

@@ -17,7 +17,7 @@ bibliography: paper.bib
 
 # Summary
 
-Many semiconductor properties depend on the response of electrons to an external pertubation.
+Many semiconductor properties depend on the response of electrons to an external perturbation.
 This perturbation could take the form of an electric field, change in temperature or an applied lattice stress. 
 In a crystal, this response depends on the interaction of the electrons with a periodic potential. 
 The effective mass approximation assumes that the response of an electron in a periodic potential is equivalent to that of a free electron with a renormalised mass (called the ``effective mass'').
@@ -34,7 +34,7 @@ Instead, we can then approximate the band structure with the Kane quasi-linear d
 [``effmass``](https://github.com/lucydot/effmass) [@Whalley2018] is a Python 3 package for calculating various definitions of effective mass  from the electronic bandstructure of a semiconducting material. 
 It contains a core class that calculates the effective mass and other associated properties of selected band structure segments.
 [``effmass``](https://github.com/lucydot/effmass) also contains functions for locating band structure extrema, calculating the Kane quasi-linear dispersion parameters and plotting approximations to the true dispersion.
-Parsing of electronic structure data is faciliated by the [``vasppy``](https://github.com/bjmorgan/vasppy) [@Morgan2018] package.
+Parsing of electronic structure data is facilitated by the [``vasppy``](https://github.com/bjmorgan/vasppy) [@Morgan2018] package.
 
 The `effmass` package is aimed towards theoretical solid state physicists and chemists who have a basic familiarity with Python. Depending on the functionality and level of approximation you are looking for, 
 it may be that one of the packages listed below will suit your needs better.
@@ -43,13 +43,13 @@ it may be that one of the packages listed below will suit your needs better.
 
 Effective mass calculations are implemented in a number of other packages:
 
-[vasppy](https://github.com/bjmorgan/vasppy/) [@Morgan2018]: This is installed as a dependancy of `effmass`. Calculates the effective mass using a least-squares quadratic fit for parabolic dispersions. 
+[vasppy](https://github.com/bjmorgan/vasppy/) [@Morgan2018]: This is installed as a dependency of `effmass`. Calculates the effective mass using a least-squares quadratic fit for parabolic dispersions. 
 
 [sumo](https://github.com/SMTG-UCL/sumo): Calculates the effective mass using a least-squares fit for parabolic and non-parabolic dispersions. 
 
 [emc](https://github.com/afonari/emc): Calculates the effective mass *tensor* using a finite-difference method for parabolic dispersions.
 
-[pymatgen](http://pymatgen.org/) [@Ong2013]: This is installed as a dependancy of `effmass`. Calculates an average effective mass *tensor* for non-parabolic dispersions with multiple bands and extrema. Also calculates the Seebeck effective mass as defined [here](https://perso.uclouvain.be/geoffroy.hautier/wp-content/papercite-data/pdf/gibbs2017.pdf).
+[pymatgen](http://pymatgen.org/) [@Ong2013]: This is installed as a dependency of `effmass`. Calculates an average effective mass *tensor* for non-parabolic dispersions with multiple bands and extrema. Also calculates the Seebeck effective mass as defined [here](https://perso.uclouvain.be/geoffroy.hautier/wp-content/papercite-data/pdf/gibbs2017.pdf).
 
 If you have an update to the information above then please use the Github [issue tracker](https://github.com/lucydot/effmass/issues/). 
 
